@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mening kutubxonam</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <h1 class="header__title">Kutubxona</h1>
+        <button class="btn">Kirish</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="wrapper main__wrapper">
+        <button class="btn btn-add">+ Kitob qo'shish</button>
+
+        <div class="books-grid">
+          <div class="book-card">
+            <h2 class="book__title">"Ikki eshik orasi"</h2>
+            <h3 class="book__author">O'tkir Hoshimov</h3>
+            <h3 class="book__pages">450 bet</h3>
+
+            <div class="btn-group">
+              <button class="btn btn-red">Tugallanmagan</button>
+              <button class="btn btn btn-remove">o'chirish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal-window">
+      <form class="modal-form">
+        <h3 class="form__title">Yangi kitob</h3>
+
+        <input
+          type="text"
+          class="input"
+          id="title"
+          placeholder="Kitob nomi"
+          required
+        />
+
+        <input
+          type="text"
+          class="input"
+          id="author"
+          placeholder="Muallifi"
+          required
+        />
+
+        <input
+          type="text"
+          class="input"
+          id="pages"
+          placeholder="Beti"
+          required
+        />
+        <div class="is-read">
+          <label for="is-read">O'qib tugatganmisiz?</label>
+          <input type="checkbox" class="checkbox" id="is-read" />
+        </div>
+
+        <button class="btn btn-green" type="submit">Qo'shish</button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
